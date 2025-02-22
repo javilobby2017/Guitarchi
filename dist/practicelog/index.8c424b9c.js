@@ -622,7 +622,10 @@ function updateStatus() {
         const lastDate = new Date(lastPractice);
         const diffDays = Math.floor((today - lastDate) / 86400000);
         if (diffDays > 0) {
-            stringsLeft = Math.max(0, stringsLeft - diffDays);
+            for(let i = 0; i < diffDays && stringsLeft > 0; i++){
+                stringsLeft--;
+                playStringSnap();
+            }
             localStorage.setItem('stringsLeft', stringsLeft);
         }
     }
@@ -630,6 +633,12 @@ function updateStatus() {
     if (stringsLeft === 0) {
         messageText.innerText = "Oh no! You've lost all the strings your guitar is upplayable!. \uD83D\uDE22";
         practiceBtn.disabled = true;
+    }
+    //function for sting snapping sound
+    const stringSnap = new Audio('./assets/sounds/string-sanps.wav');
+    //function to play snap sound
+    function playStringSnap() {
+        stringSnap.play().catch((err)=>console.error('Sound playback error', err));
     }
 }
 const resetBtn = document.getElementById('reset-btn');
