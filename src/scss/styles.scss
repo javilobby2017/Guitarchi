@@ -1,5 +1,28 @@
 $body-bg: rgb(139, 36, 139);
 
+div{
+    justify-items: center
+}
+
+@keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .floating-guitar {
+    animation: float 3s ease-in-out infinite;
+    margin-top: 50px; // Adjust this value as needed
+}
+
+  
+
 // Import all of Bootstrap's CSS
 @import "bootstrap/scss/bootstrap";
 

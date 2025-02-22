@@ -1,3 +1,3 @@
-// Import all of Bootstrap's JS
+d // Import all of Bootstrap's JS
 import * as bootstrap from 'bootstrap'
 
