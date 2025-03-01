@@ -2,6 +2,18 @@ div {
   justify-items: center;
 }
 
+.nav-container {
+  z-index: 10;
+  justify-content: space-between;
+  width: 90%;
+  margin-bottom: 200px;
+  padding: 0 20px;
+  display: flex;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 @keyframes float {
   0% {
     transform: translateY(0);
@@ -19,6 +31,26 @@ div {
 .floating-guitar {
   margin-top: 50px;
   animation: 3s ease-in-out infinite float;
+}
+
+.nav-item {
+  list-style: none;
+}
+
+.nav-link {
+  color: #000;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 4px 10px #0003;
+}
+
+.nav-link:hover {
+  background-color: #f0f0f0;
 }
 
 :root, [data-bs-theme="light"] {

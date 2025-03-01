@@ -1,0 +1,124 @@
+body {
+  background-color: purple;
+  font-family: sans-serif;
+}
+
+.metronome {
+  width: 50%;
+  min-width: 480px;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  box-shadow: 0 2px 3px #00000026;
+}
+
+.player {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  display: flex;
+}
+
+.beats {
+  color: #f0f8ff;
+  margin-right: 5px;
+  font-size: 50px;
+  display: inline-block;
+}
+
+.bpm {
+  color: #c3c3c3;
+  font-size: 14px;
+}
+
+.play {
+  color: #fff;
+  background-color: #60d08e;
+  border: 0 solid #fff;
+  border-radius: 50%;
+  outline: 0;
+  width: 50px;
+  height: 50px;
+  font-size: 14px;
+  transition: all .2s ease-out;
+}
+
+.hit-effect {
+  box-shadow: 0 0 8px 12px #ccc3, 0 0 2px 4px #b8b8b83b;
+}
+
+.beat-slider {
+  outline: none;
+  width: 100%;
+}
+
+.beat-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  cursor: pointer;
+  background-color: #60d08e;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  margin-top: -6px;
+  box-shadow: 0 1px 1px #0003;
+}
+
+.beat-slider::-moz-range-thumb {
+  cursor: pointer;
+  background-color: #7e7e7e;
+  border: none;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  margin-top: -6px;
+  box-shadow: 0 1px 1px #0003;
+}
+
+.beat-slider::-webkit-slider-runnable-track {
+  cursor: pointer;
+  background: #e3e3e3;
+  width: 100%;
+  height: 2px;
+  box-shadow: 0 1px 1px #0003;
+}
+
+.beat-slider::-moz-range-track {
+  cursor: pointer;
+  background: #e3e3e3;
+  outline: none;
+  width: 100%;
+  height: 2px;
+  box-shadow: 0 1px 1px #0003;
+}
+
+.beat-slider::-moz-focus-outer {
+  border: 0;
+}
+
+.play-text {
+  font-size: 20px;
+}
+
+.fa-play {
+  margin-left: 4px;
+}
+
+.home-button {
+  color: #fff;
+  z-index: 1000;
+  background-color: #333;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-size: 18px;
+  text-decoration: none;
+  position: fixed;
+  bottom: 300px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 4px 10px #0003;
+}
+
+.home-button:hover {
+  background-color: #555;
+}
+/*# sourceMappingURL=met.6cf3be25.css.map */
