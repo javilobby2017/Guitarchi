@@ -1,0 +1,116 @@
+body {
+  background: linear-gradient(135deg, purple, purple);
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Poppins, sans-serif;
+  display: flex;
+}
+
+.container {
+  text-align: center;
+  background: #fff;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 450px;
+  margin-bottom: 400px;
+  padding: 30px;
+  box-shadow: 0 8px 20px #0003;
+}
+
+h2 {
+  color: #2a5298;
+  margin-bottom: 15px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+#status {
+  color: #28a745;
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.button-group {
+  justify-content: space-between;
+  gap: 10px;
+  display: flex;
+}
+
+button {
+  border-radius: 8px;
+  flex: 1;
+  padding: 12px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: transform .2s, box-shadow .2s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px #00000026;
+}
+
+.btn-success {
+  background-color: #28a745;
+  border: none;
+}
+
+.btn-success:hover {
+  background-color: #1e7e34;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border: none;
+}
+
+.btn-danger:hover {
+  background-color: #bd2130;
+}
+
+.nav {
+  z-index: 1000;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav .home-button {
+  color: #fff;
+  background-color: #333;
+  border-radius: 12px;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 24px;
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color .2s, transform .2s;
+  display: flex;
+  box-shadow: 0 6px 12px #0003;
+}
+
+.nav .home-button:hover {
+  background-color: #555;
+  transform: scale(1.05);
+}
+
+.nav i {
+  font-size: 26px;
+}
+
+@media (width <= 768px) {
+  .home-button {
+    padding: 18px 26px;
+    font-size: 24px;
+  }
+
+  i {
+    font-size: 28px;
+  }
+}
+/*# sourceMappingURL=index.f684093c.css.map */

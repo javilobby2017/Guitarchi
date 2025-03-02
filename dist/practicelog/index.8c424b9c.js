@@ -596,6 +596,7 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 }
 
 },{}],"28464":[function(require,module,exports,__globalThis) {
+var _stylesScss = require("./styles.scss");
 const maxStrings = 6;
 let stringsLeft = parseInt(localStorage.getItem('stringsLeft')) || maxStrings;
 let lastPractice = localStorage.getItem('lastPractice') || null;
@@ -653,6 +654,6 @@ resetBtn.addEventListener('click', ()=>{
     updateStatus();
 });
 
-},{}]},["aIcaY","28464"], "28464", "parcelRequire94c2")
+},{"./styles.scss":"1FaOk"}],"1FaOk":[function() {},{}]},["aIcaY","28464"], "28464", "parcelRequire94c2")
 
 //# sourceMappingURL=index.8c424b9c.js.map

@@ -1,3 +1,5 @@
+import "./styles.scss";
+
 const maxStrings = 6;
 let stringsLeft = parseInt(localStorage.getItem('stringsLeft')) || maxStrings;
 let lastPractice = localStorage.getItem('lastPractice') || null;

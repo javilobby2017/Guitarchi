@@ -103,22 +103,34 @@ body {
   margin-left: 4px;
 }
 
-.home-button {
-  color: #fff;
+.nav {
   z-index: 1000;
-  background-color: #333;
-  border-radius: 8px;
-  padding: 12px 20px;
-  font-size: 18px;
-  text-decoration: none;
   position: fixed;
-  bottom: 300px;
+  bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.home-button {
+  color: purple;
+  background-color: #333;
+  border-radius: 8px;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color .2s;
+  display: flex;
   box-shadow: 0 4px 10px #0003;
 }
 
 .home-button:hover {
   background-color: #555;
+}
+
+i {
+  font-size: 20px;
 }
 /*# sourceMappingURL=met.6cf3be25.css.map */
