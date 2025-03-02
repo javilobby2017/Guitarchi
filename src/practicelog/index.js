@@ -64,6 +64,13 @@ function updateStatus() {
 
 const resetBtn = document.getElementById('reset-btn');
 
+//constants
+//const maxStrings = 6;
+//let stringsLeft = parseInt(localStorage.getItem('stingsLeft')) || maxStrings;
+
+//disable reset button until all stings are lost
+resetBtn.disabled = stringsLeft > 0;
+
 // Reset Button Logic
 resetBtn.addEventListener('click', () => {
   stringsLeft = maxStrings;
@@ -71,8 +78,28 @@ resetBtn.addEventListener('click', () => {
   localStorage.setItem('stringsLeft', maxStrings);
   localStorage.removeItem('lastPractice');
   practiceBtn.disabled = false;
+  resetBtn.disabled = true; //lock reset afer resetting
   messageText.innerText = "Guitar reset! 🎉 Start practicing again.";
   updateStatus();
 });
+
+//function to update status and check reset  button
+
+function updateStatus(){
+  localStorage.setItem('stringsLeft', stringsLeft);
+
+  if (stringsLeft === 0) {
+    resetBtn.disabled = false; //enable reset when all strings are lost
+  }
+
+  //additional UI updates here
+}
+
+function loseString() {
+  if (stringsLeft > 0) {
+    stringsLeft--;
+    updateStatus();
+  }
+}
 
 
